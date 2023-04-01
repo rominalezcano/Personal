@@ -1,330 +1,416 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700;800&family=Poppins:ital,wght@1,300&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700;800&family=Poppins:ital,wght@1,300&display=swap");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+body {
+  background-image: linear-gradient(40deg, blanchedalmond, white);
 }
 
-p{
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
-    font-size: 30px;
-    text-align: center;
-    line-height: 30px;
-    letter-spacing: 4px;
-    word-spacing: 10px;
+h1 {
+  font-size: 35px;
+  padding: 40px;
+  border: 15px solid salmon;
+  margin: 80px 40px 80px 40px;
+  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+h1:hover {
+  transition: ease-in-out 0.3s;
+  color: salmon;
+  font-size: 20px;
+  border: 10px dashed black;
+  letter-spacing: 6px;
 }
 
-.verMas
-{
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
-    font-size: 18px;
-    text-align: center;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.quienSoy{
-    padding: 50px;
-    background-color: blanchedalmond;
-    margin-left: 300px;
-    text-align: left;
-    margin-right: 20px;
-    border-radius: 30px;
-    font-weight:bold;
-    font-size: 16px;
-    text-align: center;
-    line-height: 30px;
-    letter-spacing: 4px;
-    word-spacing: 10px;
+footer {
+  background-color: lightgreen;
 }
 
-.queBusco{
-    padding: 50px;
-    margin-right: 300px;
-    margin-left: 20px;
-    text-align: left;
-    background-color: lightskyblue;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    text-align: left;
-    margin-right: 20px;
-    border-radius: 30px;
-    font-weight:bold;
-    font-size: 16px;
-    text-align: center;
-    line-height: 30px;
-    letter-spacing: 4px;
-    word-spacing: 10px;    
+header {
+  background-color: pink;
+  height: 100px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+header nav a .logo {
+  border: none;
+  margin-left: 20px;
+  padding: 10px;
+  max-width: 128px;
+}
+header nav a .logo:hover {
+  transition: ease-in-out 0.3s;
+  width: 300px;
+  padding: 2px;
+}
+header ul li {
+  display: inline-block;
+  background-color: pink;
+  padding: 1%;
+  margin-left: 10%;
+  list-style-type: none;
+}
+header .nav-link {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+}
+header .nav-item {
+  border-radius: 30px;
 }
 
-ul li{
-    display: inline-block;
-    background-color: pink;
-    padding: 1%;
-    margin-left: 10%;
-    list-style-type: none;
-
+p {
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
 }
 
-header{
-    background-color: pink;
-    height: 100px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
+@media (max-width: 991px) {
+  button.show-more {
+    display: none;
+  }
+  ul.dropdown-menu {
+    display: block;
+  }
+}
+.coleccionCapsula {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
 }
 
-@media (max-width:991px){
-    button.show-more {display:none};
-    ul.dropdown-menu {display: block;}
+.profile-pic {
+  width: 200px;
+  border: 10px dashed pink;
+  border-radius: 100%;
+  margin-left: 25%;
+  margin-bottom: 25%;
 }
 
-
-h1{
-    font-size: 35px;
-    padding: 40px;
-    border: 20px solid salmon;
-    margin: 80px 40px 80px 40px;
-    border-radius: 300px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
+.profile-pic:hover {
+  width: 250px;
+  border: 5px dashed pink;
+  transition: ease-in-out 1s;
 }
 
-.coleccionCapsula{
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bolder;
+.miFoto {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: rollIn;
+  animation-duration: 2s;
 }
 
-.nav-link{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bold;
+.miNombre {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
 }
 
-.profile-pic{
-    max-width: 300px;
-    border: 20px dashed pink;
-    border-radius: 100px;
-    margin-left: 25%;
-    margin-bottom: 50px;
+.icono {
+  border: none;
+  border-radius: 10px;
+  margin-left: 10%;
 }
 
-.miFoto{
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
+.item {
+  border: none;
+  border-radius: none;
+  margin: 16%;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 30px;
 }
 
-footer{
-    background-color: lightgreen;
+.producto {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.miNombre{
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bold;
+.catalogo {
+  background-color: darkseagreen;
+  width: 300px;
+  border-radius: 30px;
+  margin: 20px;
 }
 
-.icono{
-    border: none;
-    border-radius: 10px;
-    margin-left: 10%;
+.nombreProducto {
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
-.item{
-    border: none;
-    border-radius: none;
-    margin: 16%;
-    padding: 10px;
-    max-width: 200px;
-    border-radius: 30px;
-}
-
-.producto{
-    margin: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-.catalogo{
-    background-color: darkseagreen;
-    width: 300px;
-    border-radius: 30px;
-    margin: 20px;
-}
-
-.nombreProducto{
-    color: white;
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: normal;
-}
-
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5%;
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
 }
 
 form.contacto {
-    display: table;
-    line-height: 60px;
+  display: table;
+  line-height: 60px;
 }
 
 div.contacto {
-    display: table-row;
-    line-height: 60px;
+  display: table-row;
+  line-height: 60px;
 }
 
 label, input {
-    display: table-cell;
-    margin-bottom: 10px;
+  display: table-cell;
+  margin-bottom: 10px;
 }
 
 label {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
-.logo {
-    border: none;
-    margin-left: 20px;
-    padding: 10px;
-    max-width: 128px;
+.card-text {
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
-.nav-item {
-    border-radius: 30px;
+.card-img-top {
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
 }
 
-.card-text{
-    text-decoration: none;
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-    line-height: 20px;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-}
-
-.card-img-top{
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
-}
-
-.card-title{
-    font-family: 'Outfit', sans-serif;
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
-    font-size: 30px;
-    text-align: center;
+.card-title {
+  font-family: "Outfit", sans-serif;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color:hotpink !important;
-    margin-left: 40%;
+  background-color: hotpink !important;
+  margin-left: 40%;
 }
 
-.portfolio{
-    margin: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+.portfolio {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.card{
-    margin: 20px;
+.card {
+  margin: 20px;
 }
 
-.carinio{
-    margin: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 30px;
-    width: 90%;
+.carinio {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 30px;
+  width: 90%;
 }
 
-.conectamos{
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid 20px lightpink;
-    justify-content: space-evenly;
+.conectamos {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid 20px lightpink;
+  justify-content: space-evenly;
 }
 
-.formulario{
-    margin: 30px;
-    padding: 30px;
-    border-radius: 30px;
-    border: dashed 10px lightskyblue;
+.formulario {
+  margin: 30px;
+  padding: 30px;
+  border-radius: 30px;
+  border: dashed 10px lightskyblue;
 }
 
-.form{
-    font-size: 18px;
-    text-decoration: none;
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-    text-align: center;
+.form {
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  text-align: center;
 }
 
-.button{
-    background-color: hotpink;
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Outfit', sans-serif;
-    font-weight: normal;
-    text-align: center;
-    border: dashed 5px white;
-    margin-left: 28%;
-    
+.button {
+  background-color: hotpink;
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  border: dashed 5px white;
+  margin-left: 28%;
 }
 
-.mapa{
-    margin: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.mapa {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.sobreMi-1{
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
+#conejo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 40%;
 }
 
-.sobreMi-2{
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
+#conejo:hover {
+  width: 45%;
+  transition: ease-in-out 0.3s;
 }
+
+.verMas {
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+}
+
+.quienSoy {
+  padding: 50px;
+  background-color: blanchedalmond;
+  margin-left: 2%;
+  text-align: left;
+  margin-right: 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.queBusco {
+  margin: 5%;
+  padding: 5%;
+  background-color: lightblue;
+  text-align: left;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.queBusco2 {
+  margin: 5%;
+  padding: 5%;
+  background-color: lightpink;
+  text-align: left;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.queBusco3 {
+  margin: 5%;
+  padding: 5%;
+  background-color: burlywood;
+  text-align: left;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sobreMi-1 {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sobreMi-2 {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.portfolio-ir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin-left: 35%;
+  margin-bottom: 50px;
+}
+
+.portfolio-ir:hover {
+  width: 30%;
+  transition: ease-in-out 1s;
+}
+
+.verTrabajos {
+  width: 100%;
+}
+
+.quote {
+  background-color: bisque;
+  border-radius: 30px;
+  padding: 10%;
+  margin: 10%;
+}
+
+.conectemos {
+  background-color: paleturquoise;
+  border-radius: 30px;
+  padding: 5%;
+  margin: 5%;
+  text-align: center;
+}/*# sourceMappingURL=estilos.css.map */
