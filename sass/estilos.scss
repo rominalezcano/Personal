@@ -28,7 +28,7 @@
 }
 
 .profile-pic:hover{
-    width: 250px;
+    width: 300px;
     border: 5px dashed pink;
     transition: ease-in-out 1s;
 }
@@ -36,9 +36,9 @@
 
 .miFoto {
     display: inline-block;
-    margin: 0 0.5rem;
+    margin: 0 0.1rem;
     animation: rollIn;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 .miNombre{
@@ -337,7 +337,7 @@ label {
     align-items: center;
     justify-content: center;
     width: 300px;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-bottom: 50px;
 }
 
