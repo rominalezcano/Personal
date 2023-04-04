@@ -54,18 +54,22 @@
 
     <section>
         <article class="conectamos">
-            <form class="form">
-                <ul class="wrapper">
+            <div class="formulario">
+            <form action="" method="get" class="contacto">
+                <div class="form">
+                    <label for="name">¿Cómo te llamás? </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form">
+                    <label for="email">¿Cuál es tu e-mail? </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-                    <li style="--i:4;"><input class="input" type="text" placeholder="Name" required=""></li>
-                    <li style="--i:3;"><input class="input" placeholder="Phone number" required="" name="phone"></li>
-                    <li style="--i:2;"><input class="input" type="email" placeholder="E-mail" required="" name="email">
-                    </li>
-                    <button style="--i:1;">Submit</button>
-                </ul>
+                <div class="contacto">
+                    <button type="submit" class="btnConectar">Conectar</button>
+                </div>
+            </div>    
             </form>
-
-
             <div class="wpp">
                 <a target="_blank" href="https://wa.me/5491166041321?text=Hola!"> 
                 <img src="../images/pieza.png" alt="imagen de mariposa"></a>
