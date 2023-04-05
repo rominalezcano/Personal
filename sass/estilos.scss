@@ -1,14 +1,13 @@
+@import "variables";
 @import "generales";
 @import "nav";
 @import "parrafos";
-@import "Global";
+
 
 @media (max-width:991px) {
     button.show-more {
         display: none
     }
-
-    ;
 
     ul.dropdown-menu {
         display: block;

@@ -19,12 +19,11 @@ h1{
     display: flex;
     justify-content: center;
     font-family: 'Righteous', cursive;
-
 }
 
 a{
     text-decoration: none;
-    color:black;
+    color: $type-color;
 }
 
 footer{
@@ -37,3 +36,7 @@ ul {list-style: none;
 
 }
 
+div{
+    @include radio;
+    margin: 2%;
+}

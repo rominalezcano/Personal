@@ -22,7 +22,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #191919;
 }
 
 footer {
@@ -34,6 +34,11 @@ ul {
 }
 ul li {
   text-decoration: none;
+}
+
+div {
+  border-radius: 30px;
+  margin: 2%;
 }
 
 header {
