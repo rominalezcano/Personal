@@ -6,11 +6,11 @@
 }
 
 body{
-    background-color: #ffffff;
-    opacity: 0.8;
-    background-image:  linear-gradient(#ffe4e1 1px, transparent 1px), linear-gradient(to right, #ffe4e1 1px, #ffffff 1px);
-    background-size: 20px 20px;
+    background: rgb(238,229,174);
+    background: linear-gradient(21deg, rgba(238,229,174,0.3926995969286152) 0%, rgba(148,187,233,0.4403186445476628) 100%);
 }
+
+
 
 h1{
     font-size: 3em;
@@ -40,3 +40,4 @@ div{
     @include radio;
     margin: 0.1%;
 }
+
